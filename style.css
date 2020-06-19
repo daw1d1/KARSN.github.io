@@ -24,8 +24,8 @@ padding: 0;
 
 #slider-wrapper{
   position: relative;
-  width:800px;
-  height:400px;
+  width:100%;
+  height:550px;
   overflow: hidden;
 }
 
