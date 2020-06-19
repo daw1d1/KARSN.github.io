@@ -76,12 +76,13 @@ body {
   bottom:0;
   padding:5px 10px;
 }
-
+/*
 .resim1{left: 0;}
 .resim2{left: 650px;}
 .resim3{left: 1300px;}
 .resim4{left: 1950px;}
-/*.resim5{left: 2600px;} */
+.resim5{left: 2600px;}
+*/
 
 .aw-slider > div
 {
