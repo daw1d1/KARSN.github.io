@@ -23,15 +23,16 @@ padding: 0;
 
 #slider-wrapper{
   position: relative;
-  width:700px;
-  height:200px;
+  width:800px;
+  height:60000px;
   overflow: hidden;
+  margin: auto;
 }
 
 .img-bir, .img-iki, .img-uc, .img-dort,.img-bes{
   position: absolute;
   width:800px;
-  height:200px;
+  height:600px;
 }
 
 
