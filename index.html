@@ -25,33 +25,54 @@
 </tr>
 
 <tr>
-    <div>
-        <img class="mySlides" src="a\1_800x800.jpg">
-        <img class="mySlides" src="a\1_800x800.jpg">
-        <img class="mySlides" src="a\1_800x800.jpg">
-        <img class="mySlides" src="a\1_800x800.jpg">
-        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    <div id="slider-wrapper">
+        <div class="slider">
+            <a class="img-bir">
+                <img src="http://lorempixel.com/700/400/">
+                <span>Kategori</span>
+             </a>
+            <a class="img-iki">
+                    <img src="http://lorempixel.com/700/400/">
+                <span>Kategori</span>
+            </a>
+            <a class="img-uc">
+                <img src="http://lorempixel.com/700/400/">
+                <span>Kategori</span>
+            </a>
+            <a class="img-dort">
+                <img src="http://lorempixel.com/700/400/">
+                <span>Kategori</span>
+            </a>
+            <a class="img-bes">
+                <img src="http://lorempixel.com/700/400/">
+                <span>Kategori</span>
+            </a>
+         </div>
     </div>
-<script>
-    showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
-}
-
-</script>
+    <div id="slider-wrapper">
+        <div class="slider">
+            <a class="img-bir">
+                <img src="a\1_800x800.jpg">
+                <span>Kategori</span>
+             </a>
+            <a class="img-iki">
+                    <img src="a\2_800x800.jpg">
+                <span>Kategori</span>
+            </a>
+            <a class="img-uc">
+                <img src="a\3_800x800.jpg">
+                <span>Kategori</span>
+            </a>
+            <a class="img-dort">
+                <img src="a\4_800x800.jpg">
+                <span>Kategori</span>
+            </a>
+            <a class="img-bes">
+                <img src="a\5_800x800.jpg">
+                <span>Kategori</span>
+            </a>
+         </div>
+    </div>
 </tr>
     </body>
 </html>
