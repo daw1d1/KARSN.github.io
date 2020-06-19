@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>İLETİŞİM</title>
+    <link type="text/css" rel="stylesheet" href="C:\Users\daw1d1\Desktop\web\iletisimcss.css">
+</head>
+<body>
+
+    <tr>
+        <div class="menu">
+            <ul>
+            <li><img src="C:\Users\daw1d1\Desktop\web\favicon.ico" alt="C:\Users\daw1d1\Desktop\web\foto.jpg" width="49px" /></li>
+            <li><a href="C:\Users\daw1d1\Desktop\web\index.html">Anasayfa</a></li>
+            <li><a href="#">Galeri</a></li>
+            <li><a href="#">Hakkımda</a></li>
+            <li><a href="#">Müzikler</a></li>
+            <li><a href="#">İletişim</a></li>
+            </ul>
+            </div>
+    </tr>
+
+    <script type="text/javascript"> 
+        function regKontrol(pattern, value) 
+        { 
+           r = new RegExp(pattern, "g"); 
+           return r.test(value); 
+        } 
+         
+        function formKontrol(form) 
+        { 
+             patternEposta   = "^"+"([abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0-9_\.\-]+)"+"@"+"([abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0-9_\.\-]+)"+"[\.]"+"([abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0-9_\.\-]+)"+"$"; 
+                   
+             if ( !regKontrol(patternEposta,form.email.value)) 
+             { 
+                  alert("Lütfen Doğru Bir E-posta Adresi Giriniz."); 
+                  form.email.value=""; 
+                  form.email.focus(); 
+                  return false; 
+             } 
+             return true; 
+        } 
+
+
+        </script>
+
+
+
+
+
+
+    <div class="container">
+        <form id="contact" action="" method="" name="frmKayitFormu" onsubmit="return formKontrol(this);">
+            <h2>İletişim Sayfası</h2>
+            <div class="form-control">
+                <input placeholder="Adınız Soyadınız" type="text" required autofocus minlength="3">
+            </div>
+            <div class="form-control" >
+               <input type="text" name="email" maxlength="50" placeholder="Mail adresiniz"/> 
+            </div>
+            <div class="form-control">
+                <input placeholder="Konu" type="text" required>
+            </div>
+            <div class="form-control">
+                <textarea placeholder="Lütfen Mesajınızı Buraya Yazın.." required></textarea>
+            </div>
+            <div class="form-control">
+                <button name="submit" type="submit" id="submit">GÖNDER</button>
+
+                
+                
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
