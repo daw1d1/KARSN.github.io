@@ -25,16 +25,33 @@
 </tr>
 
 <tr>
-    <div id="slider">
-          <div class="slayt"><img src="https://unsplash.it/600/300?image=0" /></div>
-          <div class="slayt"><img src="https://unsplash.it/600/300?image=1" /></div>
-          <div class="slayt"><img src="https://unsplash.it/600/300?image=2" /></div>
-          <div class="slayt"><img src="https://unsplash.it/600/300?image=3" /></div>
-          <div id="kontrol">
-            <a href="javascript:oncekiSlayt()">Önceki</a>
-            <a href="javascript:sonrakiSlayt()">Sonraki</a>
-          </div>
-        </div>
+    <div>
+        <img class="mySlides" src="1_800x800.jpg">
+        <img class="mySlides" src="2_800x800.jpg">
+        <img class="mySlides" src="3_800x800.jpg">
+        <img class="mySlides" src="4_800x800.jpg">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+<script>
+    showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+</script>
 </tr>
     </body>
 </html>
