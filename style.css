@@ -15,7 +15,7 @@ padding: 0;
   }
   
   .menu{
-    position: f;
+    position: fixed;
   }
 .esnek{
   width: 100%;
