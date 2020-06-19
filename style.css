@@ -24,14 +24,14 @@ padding: 0;
 #slider-wrapper{
   position: relative;
   width:700px;
-  height:100px;
+  height:200px;
   overflow: hidden;
 }
 
 .img-bir, .img-iki, .img-uc, .img-dort,.img-bes{
   position: absolute;
   width:800px;
-  height:800px;
+  height:200px;
 }
 
 
